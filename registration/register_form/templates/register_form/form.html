@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <div class="border border-secondary m-5">
+  
+        <form action="" method="POST" enctype="multipart/form-data" class="m-5">
+         
+     {% csrf_token %}
+    
+            <div class="row mt-3">
+                <div class="col col-lg-4">
+                    <label>First Name</label>
+                    <input type="text" class="form-control " id="name" name="full_name" required>
+                    <br>
+    
+                </div>
+                <div class="col col-lg-4">
+                    <label>Second Name</label>
+                    <input type="text" class="form-control " id="second_name" name="second_name" required>
+                    <br>
+    
+                </div>
+            
+    
+            </div>
+    
+           
+            <div class="row">
+             
+                <div class="col col-lg-4">
+                    <label>Email</label>
+                    <input type="text" required class="form-control shadow" id="email" placeholder="Email" name="email"><br>
+        
+                </div>
+                <div class="col col-lg-4">
+                    <label>Phone Number</label>
+                    <input type="number" required class="form-control shadow" placeholder="Phone" id="number"
+                        name="phone"> <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-4">
+                    <label>Address</label>
+                    <textarea name="address" id=""class="form-control " ></textarea>
+                    <br>
+                </div>
+                <div class="col col-lg-4">
+                    <label>City</label>
+                    <input type="text" required class="form-control shadow"  placeholder="City" name="city"><br>
+        
+                </div>
+                <div class="col col-lg-4">
+                    <label>Country</label>
+                    <input type="text" required class="form-control shadow"  placeholder="Country" name="country"><br>
+        
+                </div>
+                <div class="col col-lg-4">
+                    <label>Postal Code</label>
+                    <input type="text" required class="form-control shadow"  placeholder="Postal Code" name="code"><br>
+        
+                </div>
+
+            </div>
+            <h3 class="text-secondary">About Loan</h3>
+            <div class="row">
+                <div class="col col-lg-4">
+                    <label>Purpose</label>
+                    <input type="text" required class="form-control shadow" id="purpose" placeholder="Purpose" name="purpose"><br>
+        
+                </div>
+                <div class="col col-lg-4">
+                    <label>Loan Amount</label>
+                    <input type="number" required class="form-control shadow" placeholder="Loan Amount" id="number"
+                        name="amount"><br>
+                </div>
+                <div class="col col-lg-4">
+                    <label>Asset Cost</label>
+                    <input type="number" required class="form-control shadow" placeholder="Loan Amount" id="number"
+                        name="asset_cost"><br>
+                </div>
+                <div class="col col-lg-4">
+                    <label>Loan Tentor</label>
+                    <input type="number" required class="form-control shadow" placeholder="Loan Tentor" id="number"
+                        name="tentor"><br>
+                </div>
+                <div class="col col-lg-4">
+                    <label>Loan Tentor</label>
+                    <input type="number" required class="form-control shadow" placeholder="Monthly" id="number"
+                        name="monthly"> <br>
+                </div>
+            </div>
+            <div class="row">
+                  
+                <div class="col col-lg-4">
+                    <label>Upload Document</label>
+                    <input type="file" class="form-control shadow" required  id="document"  name="document">
+              
+        
+                </div>
+        
+                <div class="col col-lg-4">
+                    <label>Upload Photo</label>
+                    <input required type="file" class="form-control shadow" name="photo" placeholder="Upload photo">
+        
+                </div>
+               
+               </div><br>
+                
+                <input type="submit" class="btn btn-primary ms-5  mt-2  btn-sm" style="width: 150px;" >
+     
+            
+        
+            </form>  
+    </div>
+        </div>     
+        
+    
+     
+</body>
+</html>m
